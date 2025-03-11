@@ -631,9 +631,9 @@ if options.CalcP && options.Print
     %fprintf('p = %.3g\n',stats.p_MC)
     if options.CalcHR && isfield(stats,'HR_logrank')
         if options.InvHR
-            fprintf('HR = %.3g (%.3g - %.3g)\n',stats.HR_logrank_Inv, stats.HR_95_CI_logrank_Inv(1), stats.HR_95_CI_logrank_Inv(2));
+            %fprintf('HR = %.3g (%.3g - %.3g)\n',stats.HR_logrank_Inv, stats.HR_95_CI_logrank_Inv(1), stats.HR_95_CI_logrank_Inv(2));
         else
-            fprintf('HR = %.3g (%.3g - %.3g)\n',stats.HR_logrank, stats.HR_95_CI_logrank(1), stats.HR_95_CI_logrank(2));
+            %fprintf('HR = %.3g (%.3g - %.3g)\n',stats.HR_logrank, stats.HR_95_CI_logrank(1), stats.HR_95_CI_logrank(2));
         end
     end
     for i = 1: DATA.numGroups
